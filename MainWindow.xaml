@@ -1,0 +1,36 @@
+﻿<Window x:Class="messangerChat.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:messangerChat"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="700" Width="500">
+
+    <Grid Background="#483D8B">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="60"/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+            <RowDefinition/>
+        </Grid.RowDefinitions>
+
+        <Border BorderBrush="White" Grid.Row="1" CornerRadius="40 40 40 40" BorderThickness="2" Margin="20 40 20 40"/>
+        <TextBox x:Name="for_username" Grid.Row="1" Text="enter your username" BorderBrush="#00ABADB3" SelectionBrush="#000078D7" Background="Transparent" Foreground="White"  FontFamily="Dubai Light" FontSize="25px" VerticalAlignment="Center" Margin="40" GotFocus="for_username_GotFocus"/>
+
+
+        <Border BorderBrush="White" Grid.Row="2" CornerRadius="40 40 40 40" BorderThickness="2" Margin="20 40 20 40"/>
+        <TextBox x:Name="for_address" Grid.Row="2" Text="enter your IP address" BorderBrush="#00ABADB3" SelectionBrush="#000078D7" Background="Transparent" Foreground="White"  FontFamily="Dubai Light" FontSize="25px" VerticalAlignment="Center" Margin="40" GotFocus="for_address_GotFocus" PreviewTextInput="for_address_PreviewTextInput"/>
+
+
+        <TextBlock Text="WELCOME TO MESSENGER" FontSize="35px"  Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontFamily="Dubai Light"/>
+
+        <Border Grid.Row="3" Background="#9370DB" CornerRadius="40 40 40 40" Margin="20,70,20,10"/>
+        <Button Grid.Row="3" VerticalAlignment="Top" VerticalContentAlignment="Top" Background="#9370DB" Content="create new chat" FontSize="25px"  Foreground="White" FontFamily="Dubai Light" Margin="40,85,49,0" BorderBrush="#00707070" Height="41" />
+
+        <Border Grid.Row="4" Background="#9370DB" CornerRadius="40 40 40 40" Margin="20,10,20,70"/>
+        <Button Grid.Row="4" Background="#9370DB" Content="connect to existing" FontSize="25px"  Foreground="White" FontFamily="Dubai Light" Margin="49,23,40,90" BorderBrush="#00707070"/>
+
+    </Grid>
+</Window>
