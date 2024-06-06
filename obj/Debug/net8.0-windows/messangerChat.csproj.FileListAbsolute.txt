@@ -18,3 +18,6 @@ C:\Users\Вика\source\repos\messangerChat\obj\Debug\net8.0-windows\refint\mes
 C:\Users\Вика\source\repos\messangerChat\obj\Debug\net8.0-windows\messangerChat.pdb
 C:\Users\Вика\source\repos\messangerChat\obj\Debug\net8.0-windows\messangerChat.genruntimeconfig.cache
 C:\Users\Вика\source\repos\messangerChat\obj\Debug\net8.0-windows\ref\messangerChat.dll
+C:\Users\Вика\source\repos\messangerChat\obj\Debug\net8.0-windows\pageForChat.g.cs
+C:\Users\Вика\source\repos\messangerChat\obj\Debug\net8.0-windows\pageForChat.baml
+C:\Users\Вика\source\repos\messangerChat\obj\Debug\net8.0-windows\messangerChat.sourcelink.json

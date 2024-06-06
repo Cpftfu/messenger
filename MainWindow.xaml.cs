@@ -1,4 +1,5 @@
 ﻿using System.Text;
+using System.Net;
 using System.Windows;
 using System.Windows.Controls;
 using System.Windows.Data;
@@ -53,6 +54,46 @@ namespace messangerChat
 				{
 					e.Handled = true;
 				}
+			}
+		}
+
+		private bool ValidateUserName(string userName)
+		{
+			if (userName == "enter your username" || string.IsNullOrEmpty(userName))
+			{
+				MessageBox.Show("please enter a valid username");
+				return false;
+			}
+			return true;
+		}
+
+		private bool ValidateIpAddress(string ipAddress)
+		{
+			if (!IPAddress.TryParse(ipAddress, out _))
+			{
+				MessageBox.Show("please enter a valid IP address");
+				return false;
+			}
+			return true;
+		}
+
+		private void for_connect_Click(object sender, RoutedEventArgs e)
+		{
+			if (ValidateUserName(for_username.Text) && ValidateIpAddress(for_address.Text))
+			{
+				// Логика для подключения к существующему чату
+				//MessageBox.Show("connected to existing chat!");
+				for_chat_frame.Content = new pageForChat();
+			}
+		}
+
+		private void for_create_Click(object sender, RoutedEventArgs e)
+		{
+			if (ValidateUserName(for_username.Text))
+			{
+				// Логика для создания нового чата
+				MessageBox.Show("chat is created!");
+				//for_chat_frame.Content = new pageForChat();
 			}
 		}
 	}

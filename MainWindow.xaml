@@ -27,10 +27,11 @@
         <TextBlock Text="WELCOME TO MESSENGER" FontSize="35px"  Foreground="White" HorizontalAlignment="Center" VerticalAlignment="Bottom" FontFamily="Dubai Light"/>
 
         <Border Grid.Row="3" Background="#9370DB" CornerRadius="40 40 40 40" Margin="20,70,20,10"/>
-        <Button Grid.Row="3" VerticalAlignment="Top" VerticalContentAlignment="Top" Background="#9370DB" Content="create new chat" FontSize="25px"  Foreground="White" FontFamily="Dubai Light" Margin="40,85,49,0" BorderBrush="#00707070" Height="41" />
+        <Button Grid.Row="3" x:Name="for_create" VerticalAlignment="Top" VerticalContentAlignment="Top" Background="#9370DB" Content="create new chat" FontSize="25px"  Foreground="White" FontFamily="Dubai Light" Margin="40,85,49,0" BorderBrush="#00707070" Height="41" Click="for_create_Click" />
 
         <Border Grid.Row="4" Background="#9370DB" CornerRadius="40 40 40 40" Margin="20,10,20,70"/>
-        <Button Grid.Row="4" Background="#9370DB" Content="connect to existing" FontSize="25px"  Foreground="White" FontFamily="Dubai Light" Margin="49,23,40,90" BorderBrush="#00707070"/>
+        <Button Grid.Row="4" x:Name="for_connect" Background="#9370DB" Content="connect to existing" FontSize="25px"  Foreground="White" FontFamily="Dubai Light" Margin="49,23,40,90" BorderBrush="#00707070" Click="for_connect_Click"/>
 
+        <Frame x:Name="for_chat_frame" Grid.RowSpan="5"/>
     </Grid>
 </Window>

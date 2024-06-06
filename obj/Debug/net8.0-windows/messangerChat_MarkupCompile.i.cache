@@ -10,11 +10,11 @@ none
 false
 TRACE;DEBUG;NET;NET8_0;NETCOREAPP
 C:\Users\Вика\source\repos\messangerChat\App.xaml
-11407045341
+22070057635
 
-61867963628
+71745995086
 198-688555687
-MainWindow.xaml;
+MainWindow.xaml;pageForChat.xaml;
 
-False
+True
 
